@@ -21,5 +21,5 @@ kubectl -n kube-system create secret generic hcloud \
 ```bash
 helm repo add hcloud https://charts.hetzner.cloud
 helm repo update hcloud
-helm install hcloud/hcloud-cloud-controller-manager --set robot.enabled=true
+helm install hcloud-ccm hcloud/hcloud-cloud-controller-manager --set robot.enabled=true
 ```
